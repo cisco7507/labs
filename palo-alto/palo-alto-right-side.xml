@@ -108,11 +108,12 @@
                   <enabled>no</enabled>
                 </ndp-proxy>
                 <ip>
-                  <entry name="10-10-30-1"/>
+                  <entry name="10-10-40-1"/>
                 </ip>
                 <lldp>
                   <enable>no</enable>
                 </lldp>
+                <interface-management-profile>ping</interface-management-profile>
               </layer3>
             </entry>
             <entry name="ethernet1/2">
@@ -131,7 +132,7 @@
                   <enable>no</enable>
                 </lldp>
                 <ip>
-                  <entry name="10-10-40-1"/>
+                  <entry name="10-10-50-1"/>
                 </ip>
                 <interface-management-profile>ping</interface-management-profile>
               </layer3>
@@ -358,11 +359,11 @@
                   <lease>
                     <unlimited/>
                   </lease>
-                  <gateway>10.10.30.1</gateway>
+                  <gateway>10.10.40.1</gateway>
                   <subnet-mask>255.255.255.0</subnet-mask>
                 </option>
                 <ip-pool>
-                  <member>10.10.30.10-10.10.30.254</member>
+                  <member>10.10.40.10-10.10.40.254</member>
                 </ip-pool>
                 <mode>auto</mode>
                 <probe-ip>yes</probe-ip>
@@ -377,11 +378,11 @@
                   <lease>
                     <unlimited/>
                   </lease>
-                  <gateway>10.10.40.1</gateway>
+                  <gateway>10.10.50.1</gateway>
                   <subnet-mask>255.255.255.0</subnet-mask>
                 </option>
                 <ip-pool>
-                  <member>10.10.40.10-10.10.40.254</member>
+                  <member>10.10.50.10-10.10.50.254</member>
                 </ip-pool>
                 <mode>auto</mode>
                 <probe-ip>yes</probe-ip>
@@ -539,6 +540,9 @@
             </entry>
             <entry name="10-10-40-1">
               <ip-netmask>10.10.40.1/24</ip-netmask>
+            </entry>
+            <entry name="10-10-50-1">
+              <ip-netmask>10.10.50.1/24</ip-netmask>
             </entry>
           </address>
         </entry>
